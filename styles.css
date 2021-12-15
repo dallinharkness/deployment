@@ -6,8 +6,10 @@ body {
 
 header{
     background-color: black;
-    height: 50px;
+    height: 200px;
     margin: 0%;
+    padding: 0%;
+    width: 100%;
 }
 
 .moon{
