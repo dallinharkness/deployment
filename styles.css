@@ -61,7 +61,7 @@ font-family: 'Teko', sans-serif;
 color: white;
 width: 100vw;
 text-align: left;
-font-size: 30px;
+font-size: 23px;
 }
 
 footer{
@@ -70,5 +70,6 @@ footer{
     font-family: 'Press Start 2P', cursive;
     font-family: 'Teko', sans-serif;
     font-size: 20px;
+    bottom: auto;
 
 }
