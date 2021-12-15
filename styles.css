@@ -8,3 +8,15 @@ body {
 font-family: 'Press Start 2P', cursive;
 color: white;
 }
+
+.div1{
+    width: 200px;
+    height: 400px;
+    background-color: white;
+}
+
+.div2{
+    width: 200px;
+    height: 400px;
+    background-color: white;
+}
