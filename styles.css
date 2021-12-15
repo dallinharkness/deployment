@@ -9,12 +9,16 @@ font-family: 'Press Start 2P', cursive;
 color: white;
 }
 
+section{
+    justify-content: center;
+}
 .div1{
     width: 200px;
     height: 400px;
     background-color: white;
     margin: 20px;
     display: block;
+    /* justify-content: center; */
 }
 
 .div2{
@@ -23,4 +27,6 @@ color: white;
     margin: 20px;
     background-color: white;
     display: block;
+    /* justify-content: center; */
+    
 }
