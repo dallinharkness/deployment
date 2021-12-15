@@ -8,10 +8,15 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server/server.js"
+    "start": "node server/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+
+  "repository": {
+    "type": "git",
+    "url": "git+YOUR-GITHUB-URL"
+  }
 }
