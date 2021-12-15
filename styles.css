@@ -13,10 +13,14 @@ color: white;
     width: 200px;
     height: 400px;
     background-color: white;
+    margin: 20px;
+    display: block;
 }
 
 .div2{
     width: 200px;
     height: 400px;
+    margin: 20px;
     background-color: white;
+    display: block;
 }
