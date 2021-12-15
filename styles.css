@@ -16,7 +16,6 @@ section{
 .div1{
     width: 500px;
     height: 400px;
-    border: 2px solid white;
     margin: 20px;
     display: block;
     float: left;
@@ -51,7 +50,7 @@ font-family: 'Press Start 2P', cursive;
 font-family: 'Teko', sans-serif;
 width: 100vw;
 text-align: left;
-font-size: 40;
+font-size: 40px;
 
 }
 
@@ -62,4 +61,5 @@ font-family: 'Teko', sans-serif;
 color: white;
 width: 100vw;
 text-align: left;
+font-size: 20px;
 }
