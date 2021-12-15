@@ -1,22 +1,21 @@
 {
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "name": "deployment",
+  "name": "deployment-demo",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "description": "",
+  "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+YOUR-GITHUB-URL"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-
-  "repository": {
-    "type": "git",
-    "url": "git+YOUR-GITHUB-URL"
+  "homepage": "YOUR-GITHUB-URL",
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
