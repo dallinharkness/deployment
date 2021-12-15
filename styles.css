@@ -50,7 +50,7 @@ font-family: 'Press Start 2P', cursive;
 font-family: 'Teko', sans-serif;
 width: 100vw;
 text-align: left;
-font-size: 40px;
+font-size: 80px;
 
 }
 
@@ -61,5 +61,14 @@ font-family: 'Teko', sans-serif;
 color: white;
 width: 100vw;
 text-align: left;
-font-size: 20px;
+font-size: 30px;
+}
+
+footer{
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+
 }
