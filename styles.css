@@ -5,14 +5,11 @@ body {
 }
 
 header{
-    background-color: black;
-    height: 200px;
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
+    
 }
 
 .moon{
+    
     font-family: 'Fredoka One', cursive;
 font-family: 'Press Start 2P', cursive;
 color: white;
@@ -72,3 +69,13 @@ text-align: left;
 font-size: 23px;
 }
 
+
+footer{
+    position: fixed;
+  margin-top: 2%;
+  height: 50;
+    width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  bottom: 0;
+}
