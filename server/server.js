@@ -25,3 +25,12 @@ const port = process.env.PORT || 4005
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
+
+
+app.get('/index.html', (req,res) =>{
+  try {
+    nonExistentFunction();
+  } catch (error) {
+    console.error(error);
+  }
+})
