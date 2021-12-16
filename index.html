@@ -21,6 +21,7 @@
             Enter your email below to be updated on the progress of when they will be released so you can be the first to order yours!
         </p>
         <input type="text" placeholder="enter email"><button type="submit">Submit</button>
+        <button id="joke">Joke of the Day!</button>
     </div>
 </section>
 
@@ -36,12 +37,24 @@
 
         function submitHandler(e){
             e.preventDefault()
-            axios.post('/api/deploy', email)
+            axios.post('/deploy', () => {
+                return 'Thank you for submitting your email!'
+            })
                 .then(res => console.log(res))
                 .catch(err => console.log(err))
         }
 
         submitEmail.addEventListener('submit', submitHandler)
+
+
+        document.querySelector('#joke').onclick = function () {
+        axios.get('http://localhost:4545/deployment/joke/')// /fortune makes a new connection between the different buttonsish
+        .then(function (response){
+          const data = response.data
+          alert(data)
+        })
+
+      }
 </script>
 </body>
 <footer>COPYRIGHTED MOON SHOES</footer>

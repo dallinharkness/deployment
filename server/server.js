@@ -16,12 +16,8 @@ app.get('/',function(req,res) {
   rollbar.info('html up and running')
 })
 
-app.post('/api/deploy', (req,res) => {
-  let{name}=req.body
-  name = name.trim()
-
-  students.push(name)
-
+app.post('/deploy', (req,res) => {
+  
   rollbar.log('email submitted successfully', {author: 'Dallin', type: 'manual'})
 
   res.status(200).send(students)
@@ -39,6 +35,6 @@ app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
 
-
+app.use(rollbar.errorHandler())
 // Rollbar.critical("Crash while entering email")
 // Rollbar.warning("not valid email");
