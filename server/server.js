@@ -10,6 +10,7 @@ var rollbar = new Rollbar({
 
 
 const app = express()
+app.use(express.json())
 
 app.get('/',function(req,res) {
   res.sendFile(path.join(__dirname, '../index.html'))
@@ -36,13 +37,15 @@ app.get("/deployment/joke", (req, res) => {
 app.get('/css', (req, res) => {
     res.sendFile(path.join(__dirname, '../styles.css'))
   })
+  app.use(rollbar.errorHandler())
+const port = process.env.PORT || 4735
+console.log(port)
 
-const port = process.env.PORT || 4005
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`)
 })
 
-app.use(rollbar.errorHandler())
+
 // Rollbar.critical("Crash while entering email")
 // Rollbar.warning("not valid email");
