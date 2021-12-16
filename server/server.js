@@ -21,7 +21,7 @@ app.post('/deploy', (req,res) => {
   
   rollbar.log('email submitted successfully', {author: 'Dallin', type: 'manual'})
 
-  res.status(200).send(students)
+  res.status(200).send('hello')
   rollbar.critical("Crash while processing email")
 })
 
