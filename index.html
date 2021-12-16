@@ -38,11 +38,10 @@
 
         function submitHandler(e){
             e.preventDefault()
-            axios.post('/deploy', () => {
-                return 'Thank you for submitting your email!'
-            })
+            axios.post('/deploy')
                 .then(res => console.log(res))
                 .catch(err => console.log(err))
+        
         }
 
         submitEmail.addEventListener('submit', submitHandler)
