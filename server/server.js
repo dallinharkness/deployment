@@ -16,6 +16,19 @@ app.get('/',function(req,res) {
   rollbar.info('html up and running')
 })
 
+app.post('/api/deploy', (req,res) => {
+  let{name}=req.body
+  name = name.trim()
+
+  students.push(name)
+
+  rollbar.log('email submitted successfully', {author: 'Dallin', type: 'manual'})
+
+  res.status(200).send(students)
+  rollbar.critical("Crash while processing email")
+})
+
+
 app.get('/css', (req, res) => {
     res.sendFile(path.join(__dirname, '../styles.css'))
   })
@@ -27,10 +40,5 @@ app.listen(port, () => {
 })
 
 
-app.get('/index.html', (req,res) =>{
-  try {
-    nonExistentFunction();
-  } catch (error) {
-    console.error(error);
-  }
-})
+// Rollbar.critical("Crash while entering email")
+// Rollbar.warning("not valid email");
