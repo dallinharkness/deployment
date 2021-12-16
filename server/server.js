@@ -24,6 +24,13 @@ app.post('/deploy', (req,res) => {
   rollbar.critical("Crash while processing email")
 })
 
+app.get("/deployment/joke", (req, res) => {
+  const fortunes = ['Q: What did one Ocean say to another? A: Nothing... they just waved.'
+]
+
+  res.status(200).send(newFortunesOnClick)
+})
+
 
 app.get('/css', (req, res) => {
     res.sendFile(path.join(__dirname, '../styles.css'))

@@ -48,7 +48,7 @@
 
 
         document.querySelector('#joke').onclick = function () {
-        axios.get('http://localhost:4545/deployment/joke/')// /fortune makes a new connection between the different buttonsish
+        axios.get('http://localhost:4005/deployment/joke/')
         .then(function (response){
           const data = response.data
           alert(data)
