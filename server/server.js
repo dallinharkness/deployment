@@ -25,10 +25,9 @@ app.post('/deploy', (req,res) => {
 })
 
 app.get("/deployment/joke", (req, res) => {
-  const fortunes = ['Q: What did one Ocean say to another? A: Nothing... they just waved.'
+  const joke = ['Q: What did one Ocean say to another? A: Nothing... they just waved.'
 ]
-
-  res.status(200).send(newFortunesOnClick)
+  res.status(200).send(joke)
 })
 
 
