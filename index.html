@@ -21,7 +21,7 @@
             Enter your email below to be updated on the progress of when they will be released so you can be the first to order yours!
         </p>
         <input type="text" placeholder="enter email"><button type="submit">Submit</button>
-        <button id="joke">Joke of the Day!</button>
+       <br> <button id="joke">Joke of the Day!</button>
     </div>
 </section>
 
@@ -31,7 +31,7 @@
     </div>
 </section>
 
-<script src ="https://unpkg.com/axios/dist/axios.min.js"></script>   
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>   
 <script>
     const addEmail = document.querySelector('input')
         const submitEmail = document.querySelector('button')
@@ -49,7 +49,7 @@
 
 
         document.querySelector('#joke').onclick = function () {
-        axios.get('http://localhost:4005/deployment/joke/')
+        axios.get('/deployment/joke')
         .then(function (response){
           const data = response.data
           alert(data)

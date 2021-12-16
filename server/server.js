@@ -28,6 +28,8 @@ app.get("/deployment/joke", (req, res) => {
   const joke = ['Q: What did one Ocean say to another? A: Nothing... they just waved.'
 ]
   res.status(200).send(joke)
+  rollbar.log('Got a joke!')
+  rollbar.warning("joke button clicked multiple times");
 })
 
 
